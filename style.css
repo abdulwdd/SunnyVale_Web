@@ -37,9 +37,7 @@
     border-style: outset;
     padding: 10px;
 }
-.head3{
 
-}
 #but1{
      border-radius: 20px;
      border-color: black;
@@ -86,9 +84,7 @@
     padding-top: 5%;
     /* margin-left: 3 0px; */
 }
-.mid1{
 
-}
 #mid2{
    text-indent: 50px;
    font-weight: 700;
@@ -101,7 +97,66 @@
    font-family: cursive;
    font-weight: 400;
    font-size: 15px;
+   color: rgba(44,44,44,1);
 }
-#mid4{
-
+.nearfooter1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
+    /* justify-content: space-between; */
 }
+#nearfooter2{
+    color: rgba(44,44,44,1);
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nearfooter3{
+    color: rgba(44,44,44,1);
+    justify-content: center;
+    font-family: cursive;
+    padding-left: 50px;
+}
+.nearfooter4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* .flex-container > div{
+    /* display: flex;
+    align-items: flex-start; */
+/* } */
+/* .flex-container{
+    display: flex;
+    align-items: flex-start;
+    height: 100px;
+    background-color: ;
+} */
+ #nearfooter4{
+    gap: 30%;
+ }
+ #nearfoot1{
+    /* width: 620px;
+    height: 385px; */
+    padding: 3px;
+    gap: 3px;
+ } 
+ #nearfoot2{
+    /* width: 300px;
+    height: 385px; */
+    padding: 3px;
+    gap: 3px;
+ }
+ #nearfoot3{
+    /* width: 300px;
+    height: 385px; */
+    padding: 3px;
+    gap: 3px;
+ }
+ .basfooter{
+    
+ }
