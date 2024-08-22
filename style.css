@@ -1,9 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .07s ease-in-out;
+}
+
 .head{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color:rgba(73,50,49,1); 
+    justify-content: space-evenly;
+    background-color:rgba(73,50,49,1);
+     height: 106px ; 
     position: sticky;
+}
+
+.head a{
+    display: flex;
+    justify-content: space-evenly;
 }
 .head1{
     color: rgba(251, 249, 249, 1);
@@ -13,6 +43,16 @@
     font-weight: 400;
     font-family: cursive;
 }
+
+.head2 a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 10em;
+    align-items: center;
+}
 /* #head11{
     text-indent: 10px;
 } */
@@ -21,42 +61,51 @@
     /* justify-content: space-between; */
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     border: rgba(73,50,49,1) 1px solid;
     color: rgba(251, 249, 249, 1);
     justify-content: center;
-
+     font-family: cursive;
+     font-family: 400;
+     font-size: 16px;
     
 }
-#headdy{
+/* #headdy{
     list-style-type: none;
     display: flex;
     gap: 20px;
     /* transition: ; */
-    cursor: pointer;
+    /* cursor: pointer;
+} */ 
+
+/* #headdy:hover {
+    border-bottom: 2px solid white;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .07s ease-in-out;
 }
-ul li :hover{
-    border: 1px solid;
-    border-style: outset;
-    border-color: rgba(251, 249, 249, 1);
-}
+
 #headdy li{
-    border: 1px solid;
+    /* border: 1px solid;
     border-color: rgba(251, 249, 249, 1);
     border-radius: 10px;
-    border-style: outset;
-    padding: 10px;
-}
+    border-style: outset; */
+    /* padding: 10px;
+} */ 
 
 #but1{
      border-radius: 20px;
-     border-color: black;
+     border-style: outset;
      background-color: rgba(73,50,49,1);
     color: rgba(251, 249, 249, 1);
      padding: 10px;
      cursor: pointer;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-color:rgba(92, 63, 61, 1);
 }
 .head3{
-    cursor: pointer;
+    cursor:pointer;
 }
 .main{
     flex-direction: column;
@@ -73,6 +122,7 @@ ul li :hover{
     font-weight: 700;
     font-size: 48px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
 }
 #main3{
     justify-content: center;
@@ -80,6 +130,7 @@ ul li :hover{
     font-weight: 400;
     font-size: 20px;
     font-family:cursive;
+    padding-top: 15px;
 }
 #main4{
     border: white 1px solid; 
@@ -87,6 +138,7 @@ ul li :hover{
     display: flex;
     justify-content: center;
     align-items: centers;
+    padding-top: 50px;
 }
 .mid{
   padding: 10%;
@@ -129,8 +181,9 @@ ul li :hover{
     display: flex;
     flex-direction: row;
     border: rgba(251, 249, 249, 1) 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(235, 225, 224, 1);
+    margin-left: 5px;
 }
 /* #nearfoott4{
     border: 1px solid;
@@ -203,6 +256,7 @@ ul li :hover{
     font-family: cursive;
     font-size: 18px;
     font-weight: 400;
+   
  }
  .nearfoot2{
     /* display: flex;
@@ -213,10 +267,12 @@ ul li :hover{
     /* padding-right: 50px; */
     display: flex;
     gap: 10px;
+    padding-top: 5%;
 }
 .nearfoot3{
-    padding-top: 170px;
-    padding-left: 20px; 
+    padding-top: 140px;
+    padding-left: 20px;
+    
 }
  #but2{
     background-color: rgba(44,44,44,1);
@@ -227,10 +283,12 @@ ul li :hover{
     margin-left: 50px;
     padding-left: 35px;
     padding-right: 35px;
+   margin-top: 20px;
+   margin-bottom: 20px;
  }
  .nearfoot5{
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(235, 225, 224, 1);
     align-items: center;
     border-color: rgba(251, 249, 249, 1);
@@ -255,7 +313,7 @@ ul li :hover{
  }
  .nearfoot6{
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(235, 225, 224, 1);
     align-items: center;
     border-color: rgba(251, 249, 249, 1);
@@ -278,7 +336,7 @@ ul li :hover{
      flex-direction: row;
  }
  .basfooter1{
-    margin-left: 5px;
+    margin-left: 10px;
  }
  #basfooter2{
     color: rgba(44,44,44,1);
@@ -303,7 +361,9 @@ ul li :hover{
      margin-right: 10px;
  } */
  .finfooter{
-    background-color: rgba(61, 41, 41, 1);
+    background-color: rgba(73, 50, 49, 1);
+    padding-bottom: 40px;
+    padding-top: 40px;
     /* border: 2px solid; */
  }
  #finfooter1{
@@ -336,20 +396,28 @@ ul li :hover{
     font-family: cursive;
  }
  .finfooter5{
+    background-color: rgba(61, 41, 41, 1);
+
     border: 1px solid;
     align-items: center;
     justify-content: center;
     /* background-color: rgba(61, 41, 41, 1); */
     width: 400px;
-    height: 300px;
+    height: 380px;
     padding: 32px;
     gap: 24px;
     margin-left: 390px;
     border-radius: 20px;
+    border-style: none;
+    margin-bottom: 50px;
+    padding-bottom: 3%;
+    margin-top: 30px;
  }
  #finfooter5a{
     color: rgba(251, 249, 249, 1);
     text-align: center;
+    font-family: cursive;
+    padding-bottom: 5%;
  }
  .finfooter6{
     text-align: center;
@@ -366,8 +434,12 @@ ul li :hover{
  #but3{
     background-color: rgba(92, 63, 61, 1);
     color: rgba(251, 249, 249, 1);
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     cursor: pointer;
     border-color: rgba(61, 41, 41, 1);
     border: none;
@@ -388,11 +460,13 @@ ul li :hover{
     display: flex;
     flex-direction: row;
     gap: 10%;
+    padding-bottom: 20px;
  }
  #footer2{
     font-family: cursive;
     font-weight: 700;
     font-size: 20px;
+    padding-bottom: 20px;
  }
  #footer3{
     font-family: cursive;
@@ -404,3 +478,13 @@ ul li :hover{
     font-weight: 700;
     font-size: 16px;
  }
+
+.finfooter6 input {
+    background-color: rgba(61, 41, 41, 1);
+    border-color: rgba(123, 84, 81, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgba(251, 249, 249, 1);
+    padding: 10px;
+}
